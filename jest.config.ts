@@ -43,7 +43,7 @@ module.exports = {
     "js"
   ],
    moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
-    prefix : '<rootDir/src/>'
+    prefix : '<rootDir>/src/'
    }),
   // modulePathIgnorePatterns: [],
   // noStackTrace: false,

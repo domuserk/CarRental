@@ -1,35 +1,22 @@
 {
   "compilerOptions": {
-                         
-    "target": "es2015",
-    "module": "commonjs",       
-    "resolveJsonModule": true,
-   
-    "strict": false,
-    "noImplicitAny": false,
-    "strictNullChecks": false ,
-    "strictFunctionTypes": false ,
-    "strictBindCallApply": false,
-    "strictPropertyInitialization": false ,
-    "noImplicitThis": false,
-    "alwaysStrict": false,
-
-    "noImplicitReturns": false,
-    "baseUrl": "./src",                       
+    "target": "es5",
+    "module": "commonjs",
+    "rootDir": "./",
+    "baseUrl": "./src",
+    "outDir": "./dist",
     "paths": {
       "@modules/*": ["modules/*"],
       "@config/*": ["config/*"],
       "@shared/*": ["shared/*"],
-      "@errors/*": ["errors/*"]
-    },              
+      "@errors/*": ["errors/*"],
+      "@utils/*": ["utils/*"]
+    },
     "esModuleInterop": true,
-
-   
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-
-   
-    "skipLibCheck": true ,
+    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
   }
 }
