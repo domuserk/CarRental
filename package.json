@@ -47,6 +47,7 @@
     "dev": "ts-node-dev  -r tsconfig-paths/register --inspect --respawn --transpile-only src/shared/infra/http/server.ts",
     "lint": "eslint --fix --ext .js,.jsx,.ts, .",
     "test": "jest",
+    "seed:admin": "ts-node-dev src/shared/infra/typeorm/seed/admin.ts",
     "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli"
   },
   "keywords": [],
