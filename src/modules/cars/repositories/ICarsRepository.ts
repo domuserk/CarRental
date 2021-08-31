@@ -1,7 +1,8 @@
-import { ICreateCategoryDTO } from "./ICategoriesRepository";
+import { Car } from "../infra/typeorm/entities/Car";
 
 interface ICarsRepository {
-   create(data: ICreateCategoryDTO): Promise<void>
+   create(data: ICreateCarDTO): Promise<Car>
+   findByLicensePlate(license_plate: string): Promise<Car>
 }
 
 export { ICarsRepository }
