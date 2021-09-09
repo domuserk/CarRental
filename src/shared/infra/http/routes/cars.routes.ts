@@ -23,7 +23,7 @@ carsRoutes.post('/',
   createCarController.handle
 )
 
-carsRoutes.get('/avaliable', listAvaliableCarsController.handle )
+carsRoutes.get('/available', listAvaliableCarsController.handle )
 
 carsRoutes.post('/specifications/:id',
   ensureAuthenticated, 
